@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Re</title>
     <style>
         body{
             font-family: verdana;
@@ -11,6 +11,7 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            margin: 0px;
         }
         .login{
             border: 1px solid tomato;
@@ -45,7 +46,7 @@
     <form class="login">
         <div class="input-box">
             <label>First Name</label>
-            <input type="text">
+            <input type="text" required>
         </div>
         <div class="input-box">
             <label>Last Name</label>
@@ -56,10 +57,9 @@
             <input type="date">
         </div>
         <div class="radioinput">
-            <p class="underline">Gender :</p> 
+            <label>Gender :</label> 
             <label >Male</label>
-            <input type="radio" name="gender" value="Male">
-            <br>
+            <input type="radio" name="gender" value="Male"> 
             <label >Female</label>
             <input type="radio" name="gender" value="Female">
             <br>
@@ -67,11 +67,11 @@
         <br>
         <div class="input-box">
         <label>Username</label>
-        <input type="text">
+        <input type="text" required>
         </div>
         <div class="input-box">
         <label for="password">Password</label>
-        <input type="password">
+        <input type="password" required>
         </div>
         <div class="input-box">
             <label for="password">Re- Enter</label>
@@ -80,19 +80,17 @@
         <div class="radioinput">
             <p class="underline">Language Known :</p> 
             <label >Java</label>
-            <input type="radio" name="lang" value="Java">
+            <input type="checkbox" name="lang" value="Java">
             <br>
             <label >C</label>
-            <input type="radio" name="lang" value="C">
+            <input type="checkbox" name="lang" value="C">
             <br>
             <label >C++</label>
-            <input type="radio" name="lang" value="C++">
+            <input type="checkbox" name="lang" value="C++">
             <br>
             <label >Python</label>
-            <input type="radio" name="lang" value="Python">
+            <input type="checkbox" name="lang" value="Python">
             <br>
-            <label >Go</label>
-            <input type="radio" name="lang" value="Go">
         </div>
         <div>
             <p class="underline">Hobbies :</p>
